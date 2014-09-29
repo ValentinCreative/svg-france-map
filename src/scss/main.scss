@@ -20,11 +20,40 @@ $gray-dark             : #323232;
     margin: 0 auto;
 }
 
-#departements,
-#ile-de-france-zoomed {
+.tooltip {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 4px 8px;
+    border: 1px solid $gray;
+}
 
-    path,
-    polygon {
+.regions {
+    #departements,
+    #ile-de-france-zoomed,
+    #dom-tom {
+        display: none;
+    }
+    #regions {
+        display: block;
+    }
+}
+
+.departements {
+    #departements,
+    #ile-de-france-zoomed,
+    #dom-tom {
+        display: block;
+    }
+    #regions {
+        display: none;
+    }
+}
+
+#departements,
+#ile-de-france-zoomed,
+#regions {
+
+    path {
         fill: $gray-lighter;
         stroke: $gray-light;
         stroke-width: 1px;
@@ -37,16 +66,14 @@ $gray-dark             : #323232;
 
     &.highlight {
 
-        path,
-        polygon {
+        path {
             fill: $blue;
         }
     }
 }
 
 #dom-tom {
-    path,
-    polygon {
+    path {
         fill: $gray-lighter;
         stroke: $gray-light;
         stroke-width: 1px;
@@ -58,20 +85,9 @@ $gray-dark             : #323232;
         &:hover {
             fill: $blue;
 
-            path,
-            polygon {
+            path {
                 fill: $blue;
             }
         }
-    }
-}
-
-#regions {
-
-    path,
-    polygon {
-        stroke-width: 1px;
-        stroke: $gray;
-        transition: fill 0.2s, stroke 0.3s;
     }
 }

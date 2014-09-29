@@ -5,56 +5,72 @@
   margin: 0 auto;
 }
 
-/* line 27, ../../src/scss/main.scss */
+/* line 23, ../../src/scss/main.scss */
+.tooltip {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 4px 8px;
+  border: 1px solid #636363;
+}
+
+/* line 33, ../../src/scss/main.scss */
+.regions #departements,
+.regions #ile-de-france-zoomed,
+.regions #dom-tom {
+  display: none;
+}
+/* line 36, ../../src/scss/main.scss */
+.regions #regions {
+  display: block;
+}
+
+/* line 44, ../../src/scss/main.scss */
+.departements #departements,
+.departements #ile-de-france-zoomed,
+.departements #dom-tom {
+  display: block;
+}
+/* line 47, ../../src/scss/main.scss */
+.departements #regions {
+  display: none;
+}
+
+/* line 56, ../../src/scss/main.scss */
 #departements path,
-#departements polygon,
 #ile-de-france-zoomed path,
-#ile-de-france-zoomed polygon {
+#regions path {
   fill: #e9e9e9;
   stroke: #969696;
   stroke-width: 1px;
   -webkit-transition: fill 0.2s, stroke 0.3s;
           transition: fill 0.2s, stroke 0.3s;
 }
-/* line 33, ../../src/scss/main.scss */
+/* line 62, ../../src/scss/main.scss */
 #departements path:hover,
-#departements polygon:hover,
 #ile-de-france-zoomed path:hover,
-#ile-de-france-zoomed polygon:hover {
+#regions path:hover {
   fill: #0c56a1;
 }
-/* line 41, ../../src/scss/main.scss */
+/* line 69, ../../src/scss/main.scss */
 #departements.highlight path,
-#departements.highlight polygon,
 #ile-de-france-zoomed.highlight path,
-#ile-de-france-zoomed.highlight polygon {
+#regions.highlight path {
   fill: #0c56a1;
 }
 
-/* line 49, ../../src/scss/main.scss */
-#dom-tom path,
-#dom-tom polygon {
+/* line 76, ../../src/scss/main.scss */
+#dom-tom path {
   fill: #e9e9e9;
   stroke: #969696;
   stroke-width: 1px;
   -webkit-transition: fill 0.2s, stroke 0.3s;
           transition: fill 0.2s, stroke 0.3s;
 }
-/* line 58, ../../src/scss/main.scss */
+/* line 85, ../../src/scss/main.scss */
 #dom-tom .domtom:hover {
   fill: #0c56a1;
 }
-/* line 62, ../../src/scss/main.scss */
-#dom-tom .domtom:hover path,
-#dom-tom .domtom:hover polygon {
+/* line 88, ../../src/scss/main.scss */
+#dom-tom .domtom:hover path {
   fill: #0c56a1;
-}
-
-/* line 72, ../../src/scss/main.scss */
-#regions path,
-#regions polygon {
-  stroke-width: 1px;
-  stroke: #636363;
-  -webkit-transition: fill 0.2s, stroke 0.3s;
-          transition: fill 0.2s, stroke 0.3s;
 }
