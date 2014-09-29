@@ -1,0 +1,77 @@
+$blue                  : #0c56a1;
+$blue-dark             : #134473;
+$red                   : #e42125;
+$yellow                : #f7b808;
+$bittersweet-red       : #fa6e69;
+$orange                : #e8850c;
+$feijoa-green          : #97d17a;
+$waikawa-gray          : #5b608c;
+
+$whitesmoke            : darken(#fff, 4%);
+
+$gray-lighter          : #e9e9e9;
+$gray-light            : #969696;
+$gray                  : #636363;
+$gray-dark             : #323232;
+
+#map-container {
+    display: table;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#departements,
+#ile-de-france-zoomed {
+
+    path,
+    polygon {
+        fill: $gray-lighter;
+        stroke: $gray-light;
+        stroke-width: 1px;
+        transition: fill 0.2s, stroke 0.3s;
+
+        &:hover {
+            fill: $blue;
+        }
+    }
+
+    &.highlight {
+
+        path,
+        polygon {
+            fill: $blue;
+        }
+    }
+}
+
+#dom-tom {
+    path,
+    polygon {
+        fill: $gray-lighter;
+        stroke: $gray-light;
+        stroke-width: 1px;
+        transition: fill 0.2s, stroke 0.3s;
+    }
+
+    .domtom {
+
+        &:hover {
+            fill: $blue;
+
+            path,
+            polygon {
+                fill: $blue;
+            }
+        }
+    }
+}
+
+#regions {
+
+    path,
+    polygon {
+        stroke-width: 1px;
+        stroke: $gray;
+        transition: fill 0.2s, stroke 0.3s;
+    }
+}
